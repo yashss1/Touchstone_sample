@@ -5,7 +5,6 @@ import 'package:touchstone_app/light_category.dart';
 import 'package:touchstone_app/scene_category.dart';
 import 'constants.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'constants.dart';
 import 'package:syncfusion_flutter_sliders/sliders.dart';
 import 'dart:math' as math;
 
@@ -113,13 +112,18 @@ class _DetailPageState extends State<DetailPage>
                                   ),
                                 ),
                                 SizedBox(width: 10),
-                                Text(
-                                  'Bed',
-                                  style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 30,
-                                    letterSpacing: 2,
-                                    color: Colors.white,
+                                InkWell(
+                                  onTap: () {
+                                    Navigator.pop(context);
+                                  },
+                                  child: Text(
+                                    'Bed',
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 30,
+                                      letterSpacing: 2,
+                                      color: Colors.white,
+                                    ),
                                   ),
                                 ),
                               ],
@@ -438,6 +442,29 @@ class _DetailPageState extends State<DetailPage>
                       height: 25,
                     ),
                   ),
+                ),
+              ),
+            ),
+            Positioned(
+              top: -60 * (1 - bnum),
+              right: 95,
+              child: Container(
+                margin: EdgeInsets.only(top: 106),
+                height: 28,
+                width: 28,
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  color: Colors.transparent,
+                  boxShadow: [
+                    BoxShadow(
+                      color: bulb_color != Colors.black
+                          ? bulb_color.withOpacity(
+                              math.min(1, math.max(slider_value, 0.3)))
+                          : Colors.transparent,
+                      offset: Offset(0, 1),
+                      blurRadius: 7,
+                    ),
+                  ],
                 ),
               ),
             ),
