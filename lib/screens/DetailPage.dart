@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:touchstone_app/color_category.dart';
-import 'package:touchstone_app/light_category.dart';
-import 'package:touchstone_app/scene_category.dart';
-import 'constants.dart';
+import 'package:touchstone_app/model/color_category.dart';
+import 'package:touchstone_app/model/light_category.dart';
+import 'package:touchstone_app/model/scene_category.dart';
+import '../constants.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:syncfusion_flutter_sliders/sliders.dart';
 import 'dart:math' as math;

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:touchstone_app/DashBoard.dart';
+import 'package:touchstone_app/screens/DashBoard.dart';
 
 void main() {
   runApp(MyApp());

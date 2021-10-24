@@ -20,7 +20,7 @@ dev_dependencies:
 
 
 flutter_icons:
-  image_path: "assets/icon1.png"
+  image_path: "assets/images/app_logo.jpg"
   android: true
   ios: true
 
@@ -28,7 +28,7 @@ flutter:
 
   uses-material-design: true
   assets:
-     - assets/images/
+    - assets/images/
   fonts:
     - family: Circular
       fonts:

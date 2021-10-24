@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:touchstone_app/DetailPage.dart';
+import 'package:touchstone_app/screens/DetailPage.dart';
 
 class RoomCategory extends StatelessWidget {
   const RoomCategory(
