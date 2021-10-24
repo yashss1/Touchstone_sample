@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.tsyashss1.touchstone_app">
    <application
-        android:label="touchstone_app"
+        android:label="TouchStone Sample"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
